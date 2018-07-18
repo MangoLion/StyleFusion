@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 
 //treelist
 
-server.listen(8080);
+server.listen(process.env.PORT || 8080);
 
 io.on('connection', function(client) {
     console.log('Client connected...');
